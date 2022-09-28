@@ -1,7 +1,7 @@
 {
   "name": "w3",
   "version": "0.0.1",
-  "description": "comp229 week3",
+  "description": "COMP229 - ASSIGNMENT1",
   "main": "server.js",
   "type": "module",
   "scripts": {
