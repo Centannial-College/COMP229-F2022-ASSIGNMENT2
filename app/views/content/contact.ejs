@@ -1,20 +1,31 @@
-<div class="container-fluid" style="background-color: #8938F7; height:100%">   
-    <div class="container bg-light mt-5  p-5 " style="color: black">
-        <form>
-            <div class="mb-3 mt-5">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-    </div>
+<div class="container-fluid" style="background-color: #8938F7; height:100%" >  
+  <div class="position-absolute top-50 start-50 translate-middle bg-light p-5">
+    <h3 class="text-center">Contact Form</h3>
+    <form action="mailto:dvelykyi@my.centennialcollege.ca">
+      <div class="mb-3 required">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullName">
+      </div>
+      <div class="mb-3 required">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3 required">
+        <label for="number" class="form-label">Contact Number</label>
+        <input type="number" class="form-control" id="number">
+      </div>
+      <div class="form-floating mt-3">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Comments</label>
+      </div>
+      <div class="input-group mb-3 mt-3">
+        <label class="input-group-text" for="inputGroupFile01">Upload</label>
+        <input type="file" class="form-control" id="inputGroupFile01">
+      </div>
+      <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-outline-dark" type="button">Submit</button>
+        <button type="reset" class="btn btn-outline-danger" type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
 </div>
