@@ -14,7 +14,7 @@ import { Secret } from '../config/config.js';
 
 
 // Import Routes
-import indexRouter from './routes/index.route.server.js'
+import indexRouter from './routes/index.js'
 
 // Instantiate Express Application
 const app = express();
