@@ -1,0 +1,15 @@
+import { Router } from "express";
+import { displayAboutePage, displayContactPage, displayHomePage, displayProjectsPage, displayServicesPage } from "../controllers/index.controller.server.js";
+import { AuthGuard } from "../utils/index.js";
+
+const router = Router();
+
+router.get('/', displayHomePage);
+router.get('/home', displayHomePage);
+router.get('/about', AuthGuard, displayAboutePage);
+router.get('/projects', displayProjectsPage);
+router.get('/services', displayServicesPage);
+router.get('/contact', displayContactPage);
+
+
+export default router;
