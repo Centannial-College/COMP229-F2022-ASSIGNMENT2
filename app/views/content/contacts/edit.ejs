@@ -1,0 +1,40 @@
+<div class="container-fluid" style="background-color: #8938F7; height: 100%">  
+    <div class="position-absolute top-50 start-50 translate-middle bg-light p-5 w-25">
+        <h3 class="text-center">Add/Edit Contact List</h3>
+        <hr>
+        <form class="form" method="POST">
+            <input type="hidden" name="id" value="<%= contact._id %>" >
+            <div class="form-group">
+                <label for="nameTextField" class="form-label">Contact Name</label>
+                <input type="text" class="form-control"
+                id="nameTextField"
+                placeholder="Enter the Contact Name"
+                name="name" 
+                value="<%= contact.name %>"
+                required>
+            </div>
+            <div class="form-group">
+                <label for="authorTextField" class="form-label">Contact Number</label>
+                <input type="number" class="form-control"
+                id="authorTextField"
+                placeholder="Enter the Contact Number"
+                name="number" 
+                value="<%= contact.number %>"
+                required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="publishedTextField" class="form-label">Email</label>
+                <input type="email" class="form-control"
+                id="publishedTextField"
+                placeholder="Enter the Email Address"
+                name="email" 
+                value="<%= contact.email %>"
+                required>
+            </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" type="submit"><i class="fas fa-edit"></i> Submit</button>
+                <a href="/contacts-list" class="btn btn-outline-dark"><i class="fas fa-undo"></i> Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

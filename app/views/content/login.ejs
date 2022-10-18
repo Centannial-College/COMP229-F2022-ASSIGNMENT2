@@ -1,12 +1,13 @@
 <div class="container-fluid" style="background-color: #8938F7; height: 100%">  
     <div class="position-absolute top-50 start-50 translate-middle bg-light p-5">
         <h3 class="text-center">Login Form</h3>
+        <hr>
         <% if(messages.length > 0) { %>
             <div id="messageArea" class="text-center alert alert-danger">
             <%= messages %>
           </div>
           <% } %>
-        <form method="POST" id="loginForm" >
+        <form method="POST" id="loginForm">
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
                 <div class="input-group mb-3">
