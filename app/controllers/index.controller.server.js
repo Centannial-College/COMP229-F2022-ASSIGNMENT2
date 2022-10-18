@@ -1,3 +1,5 @@
+/* File Name: index.controller.server.js Student Name: Daniil Velyki Student ID: 301183618 Date: October 18, 2022 */
+
 import { UserDisplayName } from '../utils/index.js';
 
 export function displayHomePage(req, res, next) {

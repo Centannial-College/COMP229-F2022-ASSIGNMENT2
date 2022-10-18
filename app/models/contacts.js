@@ -1,3 +1,5 @@
+/* File Name: contacts.js Student Name: Daniil Velyki Student ID: 301183618 Date: October 18, 2022 */
+
 import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;

@@ -1,3 +1,5 @@
+/* File Name: user.js Student Name: Daniil Velyki Student ID: 301183618 Date: October 18, 2022 */
+
 import mongoose from "mongoose";
 import passportLocalMongoose from 'passport-local-mongoose';
 

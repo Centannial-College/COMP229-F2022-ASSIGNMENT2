@@ -1,10 +1,7 @@
-import express from 'express';
+/* File Name: auth.controller.server.js Student Name: Daniil Velyki Student ID: 301183618 Date: October 18, 2022 */
 
 // need passport 
 import passport from 'passport';
-
-// need to include the User Model for authentication
-import User from '../models/user.js';
 
 // import DisplayName Utility method
 import { UserDisplayName } from '../utils/index.js';
