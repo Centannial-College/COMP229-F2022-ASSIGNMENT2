@@ -11,7 +11,7 @@ import { AuthGuard } from "../utils/index.js";
 
 const router = Router();
 
-router.get('/contacts-list', DisplayContactsList);
+router.get('/contacts-list', AuthGuard, DisplayContactsList);
 router.get('/contacts-add',  AuthGuard, DisplayContactsAddPage);
 router.post('/contacts-add', AuthGuard, ProcessContactsAddPage);
 router.post('/contacts-edit/:id', AuthGuard, ProcessContactsEditPage);

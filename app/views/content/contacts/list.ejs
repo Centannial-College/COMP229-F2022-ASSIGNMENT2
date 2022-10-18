@@ -1,5 +1,5 @@
 <div class="container-fluid" style="background-color: #8938F7; height: 100%">  
-    <div class="position-absolute top-50 start-50 translate-middle bg-light p-5 w-50">
+    <div class="position-absolute top-50 start-50 translate-middle bg-light p-5 w-75">
         <h3 class="text-center">Business Contacts List</h3>
         <hr>
         <table class="table table-striped table-hover">
@@ -20,7 +20,7 @@
                      <tr>
                          <th scope="row" class="text-center"><%= count + 1 %></th>
                          <td class="text-center"><%= contacts[count].name %></td>
-                         <td class="text-center"><%= contacts[count].number %></td>
+                         <td class="text-center">+1<%= contacts[count].number %></td>
                          <td class="text-center"><%= contacts[count].email %></td>
                          <% if(displayName) { %>
                          <td class="text-center col-1">
