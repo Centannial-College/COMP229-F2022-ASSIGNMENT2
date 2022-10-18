@@ -14,8 +14,7 @@ export function DisplayLoginPage(req, res, next){
     if(!req.user){
         return res.render('index', {title: 'Login', page: 'login', messages: req.flash('loginMessage'), displayName: UserDisplayName(req) });
     }
-
-    return res.redirect('/movie-list');
+    return res.redirect('/');
 }
 
 // Processing Function
@@ -37,13 +36,11 @@ export function ProcessLoginPage(req, res, next){
                 res.end(err);
             }
 
-            return res.redirect('/');
+            return res.redirect('/contacts-list');
 
         })
-
     })(req, res, next);
 }
-
 
 export function ProcessLogoutPage(req, res, next){
     req.logOut(function(err){
@@ -54,6 +51,5 @@ export function ProcessLogoutPage(req, res, next){
 
         console.log("user logged out successfully");
     });
-
     res.redirect('/login');
 } 
